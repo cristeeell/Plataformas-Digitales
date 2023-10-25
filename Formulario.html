@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1> HOLA PLAYER <mark>1</mark> </h1> 
+<p> <style> ="color:black> Que tal <strong>"player 1"</strong>? <br>
+te invito a llenar estos datos importantes y luego enviarnos un comentario sobre: <em> Que te parecio el juego </em> </p>
+<meta charset="UTF-8">
+<title>Formulario</title>
+<style>
+body {font-family: Arial, sans-serif;
+background-color: white;
+margin: 20px;}
+
+form {max-width: 600px;
+margin: 20px auto;
+padding: 20px;
+background-color: grey;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+label {display: block;
+margin-bottom: 8px;
+font-weight: bold;}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {width: 100%;
+padding: 8px;
+margin-bottom: 10px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;}
+input[type="submit"] 
+{background-color: darkgreen ;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;}
+input[type="submit"]:hover 
+{background-color: green;}
+</style>
+</head>
+<body>
+<form action="procesar_formulario.php" method="post">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+
+<label for="email">Correo electrónico:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="contrasena">Contraseña:</label>
+<input type="password" id="contrasena" name="contrasena" required>
+
+<label for="pais">País:</label>
+<select id="pais" name="pais">
+<option value="ecuador">Ecuador</option>
+<option value="mexico">México</option>
+<option value="espana">España</option>
+</select>
+<label for="comentarios">Comentarios:</label>
+<textarea id="comentarios" name="comentarios" rows="4"></textarea>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
